@@ -35,6 +35,7 @@ def create_hash(image):
     return str(imagehash.average_hash(Image.open(image)))
 
 
+# checks if hash is in list of images tweeded before
 def tweetedbefore(hash):
     rows = open("tweetedhash.txt", "rt")
     for line in rows:
